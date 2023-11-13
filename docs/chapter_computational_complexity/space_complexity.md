@@ -666,11 +666,11 @@
         }
     }
     /* 递归 O(n) */
-    void recur(n: i32) {
+    fn recur(n: i32)->i32 {
         if n == 1 {
-            return;
+            return 1;
         }
-        recur(n - 1);
+        recur(n - 1)
     }
     ```
 
@@ -689,7 +689,7 @@
     }
     /* 递归 O(n) */
     void recur(int n) {
-        if (n == 1) return;
+        if (n == 1) return 1;
         return recur(n - 1);
     }
     ```
